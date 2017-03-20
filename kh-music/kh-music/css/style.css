@@ -1,0 +1,340 @@
+
+body {margin-left:-.5px;
+      margin-right:-.5px;} 
+
+/**** NAVIGATION *******/ 
+
+#navigation { background-color: black;
+              position: fixed; 
+              height: 70px;
+              width:100%;
+              top:0;
+              left:0;
+              
+              z-index: 9999999;
+            }
+
+
+.nav-links li {  
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+                font-size: 11px;
+                padding-left: .15em;
+                padding-right: .15em; 
+                border-radius: 20px 10px 20px 10px;
+                /*background-color: black;*/
+                
+
+                }
+
+.nav-links { display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-end;
+              list-style: none;
+
+              margin-top: 3.1em;
+              margin-left: .1em;
+              margin-right: 2em;
+
+              }
+.nav-links a{text-decoration: none;}
+
+
+
+.nav-links :hover { text-decoration: none;
+                  background-color: #0A5175; }
+
+.nav-links :visited{color: white;} 
+
+.small-logo {width: 65px;
+             height: 55px;
+             margin-left: 8px;
+             margin-top: 30px;
+              position: fixed;}
+
+
+/****** WEBSITE CONTENT **********/ 
+
+
+/** HOME **/ 
+
+#home-section {background-color:black;
+               background-image: url(../images/grey-headshot.jpeg);
+               background-repeat: no-repeat;
+               background-size: 675px 500px ;
+                height: 800px; 
+                width: 100%;
+                margin-top: 70px;
+                }
+
+.name { 
+        padding-top: 360px;
+        /** padding-left: 25px; **/ 
+        margin-left: 5%;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 170%; 
+        font-weight: 900; } 
+
+.voice {/**padding-left: 130px; */
+        margin-left: 50%;
+        margin-top: -30px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100; } 
+
+
+
+/** Lessons **/                 
+
+#lessons-section {background-color:black;
+                  height: 600px;
+                  width:100%;}
+.lessons-graphic { width: 100%; 
+                  height: auto ;
+                  position: absolute;
+                  max-width: 80%;
+                  top: 90%;
+                   left: 10%;
+                   right: 10%;
+
+}
+
+
+
+/** Experience **/ 
+
+#resume-section {background-color:black;
+                height: 700px;
+                width: 100%;}
+
+.arrow_box {
+  position: relative;
+  background: #ffffff;
+  margin-top: -19em;
+}
+.arrow_box:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+
+/** contact**/ 
+#contact-section {background-color:black;
+                height: 700px;}
+
+.arrow_box_2 {
+  position: relative;
+  background: #ffffff;
+  margin-top: 1px;
+}
+.arrow_box_2:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+
+
+
+
+
+/*********** CONTACT FORM - adapted from bootstrap- *********/ 
+
+
+
+
+ #contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 90%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    font-size:1em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#000;
+    background:#fff;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 75%; 
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
+
+
+input {
+    position: relative;
+    z-index: 9999;
+}
+
+form{ float: center;
+      padding-left: 10%;
+      padding-right: 10%; }
+
+
+/**** FOOTER ********/ 
+
+footer { background-color: #000; 
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 100%; 
+        font-weight:100; }
+
+
+
+
+/******   MEDIA QUERIES  *******/ 
+
+@media (max-width: 320px)  { 
+
+.name       {margin-left: .5em;}
+
+.voice      { margin-left: .7em;}
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 321px) { 
+
+#home-section {  background-size: 100% 500px;}
+
+.lessons-graphic { height: 450;
+                  width: 350px;
+                  position: absolute; 
+                  margin: auto;
+                  }
+}
+
+@media screen and (min-width: 801px) { 
+  }
+
+
+
+
