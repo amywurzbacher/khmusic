@@ -10,26 +10,36 @@ body {margin-left:-.5px;
               width:100%;
               top:0;
               left:0;
+
+              border-bottom-style: solid; 
+              border-bottom-color: #6b6b6b;
+              border-bottom-width: 2px; 
               z-index: 9999999;
             }
+.contactlink {padding-right: -2em; } 
 
-.nav-links li {display: inline; 
+.nav-links li {  
                 color: white;
                 font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
-                font-size: 11px;
-                padding-left: .15em;
-                padding-right: .15em;
-                border-radius: 20px 10px 20px 10px;
-                background-color: black;
+                font-weight: 100;
+                font-size: 12px;
+                padding-left: .2em;
+                padding-right: .2em; 
+                padding-bottom: .5em;
+                padding-top: .5em;
+                /*background-color: black;*/
                 
 
                 }
 
-.nav-links { float: right; 
-              margin-top: 3.1em;
+.nav-links { display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-end;
+              list-style: none;
+
+              margin-top: 2.75em;
               margin-left: .1em;
-              margin-right: .1em;
+              margin-right: 1em;
 
               }
 .nav-links a{text-decoration: none;}
@@ -37,13 +47,15 @@ body {margin-left:-.5px;
 
 
 .nav-links :hover { text-decoration: none;
-                  background-color: #0A5175; }
+                  background-color: grey;
+                  
+ }
 
 .nav-links :visited{color: white;} 
 
 .small-logo {width: 65px;
              height: 55px;
-             margin-left: 5px;
+             margin-left: 8px;
              margin-top: 30px;
               position: fixed;}
 
@@ -62,17 +74,62 @@ body {margin-left:-.5px;
                 margin-top: 70px;
                 }
 
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+
+ 
+.aboutkrista { color: white; 
+                font-family: 'Montserrat', sans-serif;
+                font-size: 100%;
+                font-weight: 100;
+                margin-top: 100px ;
+                padding-left: 30px; 
+                padding-left: 30px;} 
+
+.aboutkrista a:visited { color: white;}
+
+.about-btn { 
+        margin-left: 10px;
+        margin-top: -10%;
+        width: 120px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 100;
+        font-size: 80%;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 3px;}
+
+#myDIV { display: none;
+      padding-left: 100px; 
+      padding-right:100px;}
+
+
+
 .name { 
         padding-top: 360px;
         /** padding-left: 25px; **/ 
         margin-left: 5%;
         font-family: 'Montserrat', sans-serif;
         color: white;
-        font-size: 150%; 
+        font-size: 170%; 
         font-weight: 900; } 
 
 .voice {/**padding-left: 130px; */
-        margin-left: 50%;
+
+        margin-left: 155px;
         margin-top: -30px;
         color: white;
         font-family: 'Montserrat', sans-serif;
@@ -83,16 +140,18 @@ body {margin-left:-.5px;
 /** Lessons **/                 
 
 #lessons-section {background-color:black;
-                height: 600px;}
+                  height: 600px;
+                  width:100%;}
 .lessons-graphic { width: 100%; 
-                  height: auto ;}
+                  height: auto ;
+                  position: absolute;
+                  max-width: 80%;
+                  top: 90%;
+                  left: 10%;
+                  right: 10%;
+}
 
 
-
-/** Experience **/ 
-
-#resume-section {background-color:black;
-                height: 700px;}
 
 .arrow_box {
   position: relative;
@@ -111,13 +170,16 @@ body {margin-left:-.5px;
   border-color: rgba(255, 255, 255, 0);
   border-top-color: #ffffff;
   border-width: 10px;
-  margin-left: -10px;
-}
+  margin-left: -10px; }
 
 
-/** contact**/ 
-#contact-section {background-color:black;
-                height: 700px;}
+
+/** Experience **/ 
+
+#resume-section {background-color:black;
+                height: 900px;
+                width: 100%;}
+
 
 .arrow_box_2 {
   position: relative;
@@ -139,6 +201,62 @@ body {margin-left:-.5px;
   margin-left: -10px;
 }
 
+.experienceheader {  height:250px;
+                  width:250px;
+            }
+.experience-div { text-align: center;}
+
+.view, .download { height: 50px;
+                  display: inline-block;
+                  margin-top: -10%;
+                  text-decoration: none;
+                  font-size: 100%;}
+
+
+.resume-pdf {text-align: center;}
+       
+
+.experience-info {color: white; 
+                  font-family: 'Montserrat', sans-serif;
+                  font-weight: 100;
+                  font-size: 90%;
+                  padding-left: 20px;
+                  padding-right:20px;
+                  line-height: 150%;}
+
+
+
+/** contact**/ 
+#contact-section {background-color:black;
+                height: 950px;}
+
+
+.contactinfo {font-family: 'Montserrat', sans-serif; 
+               font-size: 80%; 
+               font-weight: 100; ; 
+               text-align: center; 
+              color: white; }
+
+
+.arrow_box_3 {
+  position: relative;
+  background: #ffffff;
+  margin-top: 1px;
+}
+.arrow_box_3:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 10px;
+  margin-left: -10px;
+}
 
 
 
@@ -146,8 +264,10 @@ body {margin-left:-.5px;
 
 /*********** CONTACT FORM - adapted from bootstrap- *********/ 
 
-
-
+.contact-header {text-align: center;} 
+.contactimage { margin-top: 20px;
+              width: 200px; 
+                height: 200px;}
 
  #contact{
     padding:10px 0 10px;
@@ -244,7 +364,7 @@ body {margin-left:-.5px;
   .form-btn{
     width:180px;
     display: block;
-    height: auto;
+    height: 100%;
     padding:15px;
     color:#000;
     background:#fff;
@@ -283,6 +403,17 @@ form{ float: center;
       padding-left: 10%;
       padding-right: 10%; }
 
+.contact-form { margin-top: 50px;}
+
+.contact-icon { text-align: center; }
+ .black-facebook { width: 45px;
+                  height: 45px;
+                }
+.black-twitter { width: 45px;
+                  height: 45px;
+                }
+
+
 
 /**** FOOTER ********/ 
 
@@ -290,42 +421,125 @@ footer { background-color: #000;
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         color: white;
-        font-size: 100%; 
-        font-weight:100; }
+        font-size: 70%; 
+        font-weight:100; 
+        height: 40px;
+        background-color: #A9A9A9;}
 
+.footer-info { padding-top: 20px; } 
 
 
 
 /******   MEDIA QUERIES  *******/ 
 
-@media (max-width: 304px)  { 
 
-.homelink { float: left; 
-              margin-top: .5em;
-              margin-left: -36%; } 
-.lessonslink {float: left; 
-              margin-left: -16%;
-              margin-top: .5em; } 
-.resumelink {float: left;
-             margin-left: 35%;
-             margin-top: .5em;} 
-.contactlink {float: right; 
-              margin-right: .2em;
-              margin-top: .5em;} 
-
-
-               
-
-
-.navlinks li:first-child { padding-left: 5em; }
-.small-logo { margin-left: 37%;
-              margin-right: 45% }
+@media (max-width: 320px)  { 
 
 .name       {margin-left: .5em;}
 
 .voice      { margin-left: .7em;}
 
 
+.lessons-graphic { height: 450px;
+                  width: 350px;
+                  position: absolute;
+                  margin: auto;
+                  top: 90% ; }
 
+#resume-section { height: 1300px;}
+
+ .view , .download { margin-bottom: 20px; }  
+
+.view {margin-top: 10px;} } 
+
+
+/*************************************/ 
+
+@media screen and (max-width: 800px) and (min-width: 321px) { 
+
+#home-section {  background-size: 100% 500px;
+                ;}
+
+
+
+.lessons-graphic { 
+                    height: 450px;
+                  width: 350px;
+                  position: absolute;
+                  margin: auto;
+                  top: 85% ;  } 
+
+          }
+
+
+/************************************/ 
+
+@media screen and (min-width: 801px) {
+
+  .small-logo {width: 80px;
+             height: 70px;
+             margin-left: 8px;}
+
+  .nav-links li { font-size: 80%;
+                 font-weight: 100;}
+
+  #home-section { height: 950px; 
+                  background-size: 100% 950px;} 
+
+  .name { margin-left: 50%; 
+         padding-top: 170px;
+        font-size: 300%;
+        padding-bottom: -10px}
+  .voice { margin-top: -4%;
+        margin-left: 50%;
+        padding-top: -5px;
+        font-size: 200%;}
+  
+  #lessons-section {height: 1000px;}
+
+
+
+.lessons-graphic {height: 550px;
+                  width: 450px;
+                  position: absolute; 
+                  margin: auto;
+                  top: 110%; } 
+
+  #resume-section {height: 1000px; }
+
+  .view, .download {margin-top: 20%;} 
+
+  #contact-section { height: 1000px;} 
+
+  
+.contactinfo { font-size: 100%; } 
+
+.about-btn {margin-left: 50%;
+            margin-top: -20%;
+            height: 35px; } } 
+
+/***********************************************/ 
+
+@media screen and (max-width: 600px) { 
+
+.lessons-horizontal {display:none; !important } }
+
+/************************************************/
+
+@media screen and (max-width: 10000px) and (min-width: 600px) { 
+
+.lessons-graphic { display: none;}
+
+.lessons-horizontal { height: auto;
+                      width: 90%;
+                      margin-top: 10%;
+                      margin-left: 5%;}
 }
+/*********************************************/ 
+
+@media screen and (max-width: 801px) and (min-width: 321px) { 
+ .about-btn {margin-left: 155px; }}
+
+
+
 
