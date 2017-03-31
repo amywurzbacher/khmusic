@@ -6,13 +6,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,800,900" rel="stylesheet">
     <link href="kh-music/bootstrap-3.3.7-dist 3/css/bootstrap.css" rel="stylesheet" type="text/css" />
-<!-- <link href="kh-music/bootstrap-3.3.7-dist 3/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> --> 
+ <link href="kh-music/bootstrap-3.3.7-dist 3/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+   
 
 
 	<title> KH MUSIC </title>
@@ -21,7 +25,7 @@
 
 <body>
 
-        <div class="container row"> 
+       <div class="container row"> 
         <div class="col-xs-12 col-sm-12 col-md-12" id="navigation">  
                         
 				<a href="#home-section"> <img src="images/KH.png" class="small-logo"> </a>
@@ -44,6 +48,31 @@
 KRISTA HECKMANN </p> <p class="voice"> MEZZO SOPRANO </p> 
 
 
+<div id="overlay" onclick="off()"> <p class="aboutkrista">Kentucky native, Krista Heckmann, graduated from the University of Louisville in 2016 with a 
+degree in Vocal Preformace. She enjoys performing and teaching voice lessons. 
+She is the Children's Choir Co-Director at Second Presbyterian as well as a section leader in the choir. She's a member of Kentcuky Opera and has been in numerous shows. Visit the <a href="#resume-section"> Resumé </a> section for more information. (Click anywhere for less information) </p> </div>
+
+
+
+  <button onclick="on()" class="about-btn">ABOUT KRISTA</button>
+
+
+
+
+
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+
+
 </div>
 
 <!-- LESSONS CONTENT --> 
@@ -53,7 +82,11 @@ KRISTA HECKMANN </p> <p class="voice"> MEZZO SOPRANO </p>
 
 
                 <a href="#lessons-section">  <div class="arrow_box"> &nbsp; </div> </a>               
-              <img src="images/Learn With Krista.png" class="lessons-graphic">  </img>
+              <img src="images/Learn With Krista.png" class="lessons-graphic" >  </img>
+              <img src="images/lessons-horizontal.png" class="lessons-horizontal" >  </img>
+
+           <div class="col-xs-12 col-sm-12 col-md-12 row lessonsinfo" 
+                <p> Voice lessons are offered to students of all ages in 10 week terms followed by a recital </p> </div> 
 
             
 
@@ -62,8 +95,23 @@ KRISTA HECKMANN </p> <p class="voice"> MEZZO SOPRANO </p>
 
 <!-- EXPERIENCE CONTENT --> 
 
-            <div class= "col-xs-12 col-sm-12 col-md-12 row" id="resume-section">
+            <div class= "col-xs-12 col-sm-12 col-md-6 row" id="resume-section">
                         <div class="resume-text">  <a href="#resume-section">  <div class="arrow_box_2"> &nbsp; </div> </a>
+
+            <div class=" experience-div"> <img src="images/experience.png" class="experienceheader"> </img> </div> 
+
+                <p class="experience-info"> In 2015, Krista joined the octet at Second Presbyterian. After joining she was asked to Co-direct Children's Choir. She's also a vocal coach at Folsom Academy. </br> </br> 
+
+                Krista graduated with a Bachelors Degree in Vocal Preformace from the University of Louisville in 2016. During her time at UofL she preformed in <i> Dialogues of the Carmelites </i> (Chorus), <i> Don Giovanni </i> (Chorus), <i> Old Maid and the Theif </i> (Miss Todd), and <i> Magic Flute </i> (Third Lady). <br> </br> 
+
+                Krista has been a memeber as Kentucky Opera since 2013, where she's performed in such shows as <i> La Boheme </i>  (Chorus), <i> Romeo et Julliette </i> (Chorus), Woman in Morocco </i> (Woman 5), <i> Macbeth </i>  (Witch Chorus), <i> Madame Butterfly </i> (Geisha), and <i> Abduction from the Seraglio </i> (Chorus). </br> </br>   
+
+                In 2013, she began preforming with Thompson Street Opera in the shows <i> Opera </i> (Lady 3), <i> Cephalophora </i> (Chorus) , <i>Cosmic Ray and the Amazing Chris </i> (Dr. Terra/Chorus), 
+                <i> Intoxication: America's Love Affair with Oil </i> (Sienna/Spectator 2/Chorus) , <i> The Final Battle for Love </i> (Starla). </p>  </div> 
+
+
+
+              <div class="resume-pdf">  <a href="krista_heckmann_music_resume.pdf" class="view">   <button class="form-btn pdf-btn"> View full resumé </button> </a> <a href="krista_heckmann_music_resume.pdf" download class="download">  <button class="form-btn pdf-btn"> Download Resumé PDF  </button>  </a> </div> 
 
                          </div> </div>
 
@@ -71,9 +119,11 @@ KRISTA HECKMANN </p> <p class="voice"> MEZZO SOPRANO </p>
 
 <!-- CONTACT CONENT --> 
 
-            <div class="col-xs-12 col-sm-12 col-md-12 row" id="contact-section">
-                        
+            <div class="col-xs-12 col-sm-12 col-md-12 row" id="contact-section"> 
 
+            <a href="#contact-section">  <div class="arrow_box_3"> &nbsp; </div> </a>   
+                        
+            <div class="contact-header"> <img src="images/contactkrista.png" class="contactimage"> </img> </div> 
         <!-- Form Area -adtapted from bootstrap -->
 
                 <div class="contact-form">
@@ -99,6 +149,11 @@ KRISTA HECKMANN </p> <p class="voice"> MEZZO SOPRANO </p>
                         <!-- Clear -->
                         <div class="clear"></div>
 
+                        <p class="contactinfo"> Email: kjheck@gmail.com |
+                            Phone: 502-111-1111 </p> 
+                       <div class="contact-icon"> <a href="https://www.facebook.com/Krista-Heckmann-Mezzo-Soprano-155164485002884/"><img class ="black-facebook" src="images/black-facebook.png">  </a> </img> 
+                        <a href="https://twitter.com/KristaHeckmann"><img class="black-twitter" src="images/black-twitter.png">  </a> </img> </div> 
+
 
                     </form>
 
@@ -114,13 +169,14 @@ KRISTA HECKMANN </p> <p class="voice"> MEZZO SOPRANO </p>
             </div><!-- End Inner --> </div> </div>
 </div>
 
-<div class="col-xs-12 col-sm-12 col-md-12"> <footer class="footer"> 
-    All Rights Reserved | Amy Wurzbacher 2017 </footer> </div> 
+<div class="col-xs-12 col-sm-12 col-md-12 row"> <footer class="footer"> 
+ <div class=" footer-info"> All Rights Reserved | Amy Wurzbacher 2017 </div>   </footer> </div> 
 
 
-</body>
+<script src="kh-music/js/app.js"> </script> 
+<script src="kh-music/bootstrap-3.3.7-dist 3/js/npm.js"> </script> 
+<script src="kh-music/bootstrap-3.3.7-dist 3/js/bootstrap.min.js"></script>
 
-
-
+</body> 
 
 </html>

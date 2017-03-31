@@ -1,3 +1,8 @@
-This is my first front end development project. 
+This project is my capstone project for CodeLouisville's Front End Web Development course. 
 
-It is a musican/preformer's portfolio page. It's a way for everything to be kept in one spot- bio, resume, lessons/inquiry information and ways to get in contact. 
+For my project, I've created a website for a preformer who needed a portolio/ artist page.
+It's a central location for people to find out who she is, what she does, and what what she can offer. It has a fairly simple design, as to not distract from the content.  
+
+This site showcases HTML, CSS, and javascript. It uses a bootstrap framework grid system. It was designed for mobile first, but is responsive on most screen sizes. 
+
+To view this project, run index.html! 
